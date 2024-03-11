@@ -22,5 +22,5 @@ favorites first, which seemed to work after a few tweaks.
 This was already towards the end of the proposed time frame, so I added a not so elegant connectivity check for the splash screen,
 the menu button for the grid cards, and wrote unit tests for the Repository and the viewmodels, however I couldn't wrap everything perfectly up, 
 as I already was past hours.
-Space for improvement: Better internet connectivity checks could be added, error handling on network calls is definitely must to do, some Unit tests are missing, and the missing feature of 
+Room for improvement: Better internet connectivity checks could be added, error handling on network calls is definitely a must to do, some Unit tests are missing, and the missing feature of 
 Evolution tab on the details page, and an overall clean up of unused or ugly code. As the time limit was pretty tight I couldn't finish all, but I hope this shows what issues I'm aware of.
