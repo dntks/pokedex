@@ -9,6 +9,7 @@ It's not ideal, but all the data arrives only once this way, as I planned to cre
 This means that scrolling through the list basically saves all the data to the phone, and then the app can work completely offline.
 After deciding on the basics, I've created the Repository, the mapped the model from the API into data classes.
 This took some time, to figure out, but it seemed I'll have all the data with 2 types of API calls.
+At this point I opted for storing some data as json String in the database, as it made development quicker at the moment.
 After setting up the DB I started to add UI elements along with the OverviewScreen, and also realized I'll need to
 create a NavGraph for easier usage of the BottomNavigation later on.
 After the LazyGrid was ready to show data, I was testing around the UI and the saved data, fixing smaller issues.
