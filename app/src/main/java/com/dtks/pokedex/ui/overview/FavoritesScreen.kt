@@ -1,9 +1,11 @@
 package com.dtks.pokedex.ui.overview
 
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -35,6 +37,7 @@ fun FavoritesScreen(
                 PokemonGrid(favoritePokemons, overviewViewModel, onPokemonDetailsClick)
             } else {
                 Text(
+                    modifier = Modifier.padding(dimensionResource(id = R.dimen.generic_padding)),
                     text = stringResource(id = R.string.no_favorites),
                     style = Typography.bodyMedium
                 )

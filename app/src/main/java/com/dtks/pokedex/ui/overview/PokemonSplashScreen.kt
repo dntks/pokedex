@@ -52,11 +52,14 @@ fun PokemonSplashScreen(
         floatingActionButton = {}
     ) { paddingValues ->
 
-        if (pokemonsState.pokemons.isEmpty()
-                .not() && timePassed && networkConnectivity == ConnectionState.Available
-        ) {
-            onSplashEnd()
-        } else if(networkConnectivity == ConnectionState.Unavailable){
+        if (networkConnectivity == ConnectionState.Available) {
+            viewModel.getPokemons()
+            if (pokemonsState.pokemons.isEmpty()
+                    .not() && timePassed && networkConnectivity == ConnectionState.Available
+            ) {
+                onSplashEnd()
+            }
+        } else {
             showError(R.string.no_internet_connection, snackbarHostState)
         }
         Box(
@@ -73,6 +76,7 @@ fun PokemonSplashScreen(
         }
     }
 }
+
 @Composable
 private fun showError(
     @StringRes userMessage: Int,

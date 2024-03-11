@@ -1,10 +1,12 @@
 package com.dtks.pokedex.viewmodel.overview
 
+import androidx.compose.runtime.getValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dtks.pokedex.data.repository.PokemonRepository
 import com.dtks.pokedex.di.DefaultDispatcher
 import com.dtks.pokedex.ui.overview.PokemonGridItem
+import com.dtks.pokedex.utils.connectivityState
 import com.dtks.quickmuseum.utils.WhileUiSubscribed
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
@@ -34,11 +36,6 @@ class OverviewViewModel @Inject constructor(
                 uiState.filterValues { it.name.lowercase().startsWith(searchText) }
             PokemonGridUiState(filteredValues)
         }.stateIn(viewModelScope, WhileUiSubscribed, PokemonGridUiState())
-
-
-    init {
-        getPokemons()
-    }
 
     fun getPokemonDetails(id: Int) {
         viewModelScope.launch(dispatcher) {
