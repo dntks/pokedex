@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="generic_padding">12dp</dimen>
+    <dimen name="card_padding">10dp</dimen>
+    <dimen name="grid_padding">20dp</dimen>
+    <dimen name="list_item_padding">10dp</dimen>
+    <dimen name="list_item_image_width">400dp</dimen>
+    <dimen name="list_item_height">70dp</dimen>
+    <dimen name="list_item_text_width">200dp</dimen>
+    <dimen name="progress_indicator_size">50dp</dimen>
+    <dimen name="card_height">200dp</dimen>
+    <dimen name="id_padding">5dp</dimen>
+    <dimen name="extraBottom">80dp</dimen>
+</resources>

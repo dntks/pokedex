@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="name">Name</string>
+    <string name="id">ID</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="types">Types</string>
+    <string name="abilities">Types</string>
+    <string name="pokeapi_connection_error">Couldn\'t reach the PokeAPI. Try again later.</string>
+    <string name="error">Some error happened, please try again later.</string>
+    <string name="loading_error">An error occurred while loading the data.</string>
+    <string name="loading">Loading…</string>
+    <string name="image_background_label">image background\n</string>
+    <string name="permenant_denied_location_error">Enable location in settings to use the app!</string>
+    <string name="no_internet_connection">The app needs internet to work. Please check your internet connection and try again!</string>
+    <string name="details">details</string>
+    <string name="all_pokemon">All Pokémon</string>
+    <string name="search_for_pokemon">Search for Pokémon…</string>
+    <string name="back">back</string>
+    <string name="no_content">Couldn\'t load details</string>
+    <string name="pokemons">Pokemons</string>
+    <string name="favorites">Favorites</string>
+    <string name="my_favorites">My favorites</string>
+    <string name="no_favorites">You have no favorite Pokemons yet.</string>
+    <string name="favorite_button">Favorite button</string>
+    <string name="pokemon_image">pokemon image</string>
+    <string name="about">About</string>
+    <string name="stats">Stats</string>
+    <string name="evolution">Evolution</string>
+    <string name="add_to_favorite">Add to favorites</string>
+    <string name="open_pokemon">Open Pokemon</string>
+    <string name="remove_favorite">Remove favorite</string>
+    <string name="logo">logo</string>
+
+</resources>
